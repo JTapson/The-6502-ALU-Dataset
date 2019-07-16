@@ -8,7 +8,7 @@ ALU_out_train - Corresponding outputs for the inputs in ALU_in_train.
 
 ALU_in_test - Input testing data.
 
-ALU_out_train - Corresponding outputs for the inputs in ALU_in_test.
+ALU_out_test - Corresponding outputs for the inputs in ALU_in_test.
 
 The data formats are:
 
