@@ -20,7 +20,12 @@ Output - 11 binary bits x approximately 650000 rows, corresponding to the input 
 
 AVR ACR HC ADD7 ADD6 ADD5 ADD4 ADD3 ADD2 ADD1 ADD0
 
+
 I suggest for Python processing you import the .mat file - typical code below:
+
+import scipy.io as spio
+
+import numpy as np
 
 mat = spio.loadmat('ALU_6502.mat')
 
