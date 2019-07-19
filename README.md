@@ -14,11 +14,11 @@ The data formats are:
 
 Input - 23 binary bits (columns) and approximately 650000 samples (rows).  The column order is:
 
-SUM AND EOR OR SR DAA I/ADDC A7 A6 ... A1 A0 B7 B6 ... B1 B0
+SUM AND EOR OR SR DAA I/ADDC A7 A6 A5 A4 A3 A2 A1 A0 B7 B6 B5 B4 B3 B2 B1 B0
 
 Output - 11 binary bits x approximately 650000 rows, corresponding to the input data rows.  The column order is:
 
-AVR ACR HC ADD7 ADD6 ... ADD1 ADD0
+AVR ACR HC ADD7 ADD6 ADD5 ADD4 ADD3 ADD2 ADD1 ADD0
 
 I suggest for Python processing you import the .mat file - typical code below:
 
