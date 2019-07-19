@@ -19,3 +19,19 @@ SUM AND EOR OR SR DAA I/ADDC A7 A6 ... A1 A0 B7 B6 ... B1 B0
 Output - 11 binary bits x approximately 650000 rows, corresponding to the input data rows.  The column order is:
 
 AVR ACR HC ADD7 ADD6 ... ADD1 ADD0
+
+I suggest for Python processing you import the .mat file - typical code below:
+
+mat = spio.loadmat('ALU_6502.mat')
+
+x_train = mat['ALU_in_train']/1.0
+
+y_tr = np.array(mat['ALU_out_train'])
+
+y_train = y_tr[:,10]
+
+x_test = mat['ALU_in_test']/1.0
+
+y_te = np.array(mat['ALU_out_test'])
+
+y_test = y_te[:,10]
